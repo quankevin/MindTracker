@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_view_bkg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/title_tv_style"
+            android:text="视频" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/title_map" -->
+        <!-- style="@style/title_right_tv_style" -->
+        <!-- android:padding="10dip" -->
+        <!-- android:text="地图" /> -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_view_bkg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text=""
+            android:textSize="20sp" />
+
+        <com.ppkj.mindrays.widget.DigitalClock
+            android:id="@+id/digitalClock1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/video_time"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:id="@+id/map4"
+            android:layout_width="100dip"
+            android:layout_height="60dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/main_map_bg2"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/video_mindrays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:text="@string/mindrays"
+            android:textColor="@color/color_txt_light_gray"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/video_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_mindrays"
+            android:gravity="center"
+            android:text="@string/connect_lost"
+            android:textColor="@color/color_txt_light_gray"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</LinearLayout>

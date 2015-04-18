@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_view_bkg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_title_height" >
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_width="match_parent"
+            android:text="找回密码" />
+
+        <TextView
+            android:id="@+id/title_back"
+            style="@style/title_back_tyle" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/user_input_mail"
+        style="@style/user_login_et_style"
+        android:hint="填写您的邮箱"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/userrepwd_getvericode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/user_button_bg"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

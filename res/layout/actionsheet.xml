@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_top_normal"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dip"
+        android:text="分享到:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <GridView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_bottom_normal"
+        android:gravity="center"
+        android:numColumns="3"
+        android:textColor="#FD4A2E"
+        android:textSize="16sp"
+        android:verticalSpacing="20dip" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#037BFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

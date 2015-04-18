@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/device_file"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/user_item_bg" >
+
+        <TextView
+            style="@style/user_tv_style"
+            android:text="设备文件" />
+
+        <TextView style="@style/user_iv_style" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/local_file"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/user_item_bg"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            style="@style/user_tv_style"
+            android:text="本地文件" />
+
+        <TextView style="@style/user_iv_style" />
+    </RelativeLayout>
+
+</LinearLayout>

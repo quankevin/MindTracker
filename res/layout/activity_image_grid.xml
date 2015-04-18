@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_title_height" >
+
+        <TextView
+            android:id="@+id/title_head"
+            style="@style/title_tv_style"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/title_back"
+            style="@style/title_back_tyle" />
+    </RelativeLayout>
+
+    <!-- <GridView -->
+    <!-- android:id="@+id/gridview" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_margin="8dp" -->
+    <!-- android:horizontalSpacing="8dp" -->
+    <!-- android:numColumns="3" -->
+    <!-- android:scrollbars="none" -->
+    <!-- android:verticalSpacing="8dp" > -->
+    <!-- </GridView> -->
+
+    <com.comcast.freeflow.core.FreeFlowContainer
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

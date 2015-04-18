@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_title_height" >
+
+        <TextView
+            style="@style/title_tv_style"
+            android:text="云存储" />
+
+        <TextView
+            android:id="@+id/cloud_getftp"
+            style="@style/title_right_tv_style"
+            android:padding="10dip"
+            android:text="云盘" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/file_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

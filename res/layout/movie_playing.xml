@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <SurfaceView
+        android:id="@+id/ott_video_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/movie_playing_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/buffering_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="0"
+            android:scaleType="centerInside"
+            android:singleLine="true"
+            android:text="@string/buffering"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/buffering_progress"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="60dip"
+            android:layout_height="60dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/playing_tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/text_shadow"
+            android:gravity="center"
+            android:text="028"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="79dip"
+            android:background="@drawable/movie_playing_head"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:text="正在播放:"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/mediacontroller_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <tv.danmaku.ijk.media.widget.PlayingList
+            android:id="@+id/main_playing_list"
+            android:layout_width="338dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/now_playing"
+            android:layout_marginBottom="80dip"
+            android:background="@color/background_transpant"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/playing_list_divider"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </tv.danmaku.ijk.media.widget.PlayingList>
+
+        <tv.danmaku.ijk.media.widget.MediaController
+            android:id="@+id/playing_ll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:nextFocusUp="@+id/main_playing_list"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/playing_prompt_bg"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dip"
+                        android:text="确定/OK：播放/暂停"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/playing_left" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/playing_right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=":快进快退"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/playing_up" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/playing_down" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=":换频道"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="100dip"
+                        android:text="返回:退出"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/playing_ll_seekber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/playing_seekbar_bg"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/mediacontroller_play_pause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:src="@drawable/playing_pause" />
+
+                    <TextView
+                        android:id="@+id/mediacontroller_time_current"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="00:00:00"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <SeekBar
+                        android:id="@+id/mediacontroller_seekbar"
+                        style="@style/seekBarMyStyle"
+                        android:layout_width="500dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:id="@+id/mediacontroller_time_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </tv.danmaku.ijk.media.widget.MediaController>
+    </RelativeLayout>
+
+</FrameLayout>

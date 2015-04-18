@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/view_pager_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_title_height" >
+
+        <TextView
+            android:id="@+id/title_head"
+            style="@style/title_tv_style"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/title_back"
+            style="@style/title_back_tyle" />
+
+        <TextView
+            android:id="@+id/title_share"
+            style="@style/title_right_tv_style"
+            android:drawableLeft="@drawable/top_shard"
+            android:padding="10dip" />
+    </RelativeLayout>
+
+    <com.ppkj.mindrays.view.HackyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

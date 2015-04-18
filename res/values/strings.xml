@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">迈瑞思行车记录</string>
+    <string name="str_dialog_exit_msg">确定要退出“%1$s”吗?</string>
+    <string name="str_haha">蝶舞天涯\n柳眉蝶眸舞翩然，笑靥缠绵桃花间。\n晨光轻抚吟呓语，倩影窈窕犹胜仙。</string>
+    <string name="connect_lost">断开状态中</string>
+    <string name="mindrays">迈瑞思</string>
+
+    <!-- 导航 -->
+    <string name="str_navi_video">视频</string>
+    <string name="str_navi_file">文件</string>
+    <string name="str_navi_cloud">云存储</string>
+    <string name="str_navi_me">我</string>
+    <!-- 菜单文字 -->
+    <string name="menu_lock">Lock</string>
+    <string name="menu_unlock">Unlock</string>
+
+    <!-- chapter slide -->
+
+
+    <!-- viewpager navigate -->
+
+
+    <!-- expand list select -->
+
+
+    <!-- double fragment list -->
+
+
+    <!-- title bar animator -->
+
+
+    <!-- list item children click -->
+
+
+    <!-- pull list view -->
+
+
+    <!-- sliding menu -->
+    <string name="buffering">加载中...</string>
+    <string name="vitamio_videoview_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="vitamio_videoview_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+			this device.</string>
+    <string name="vitamio_videoview_error_title">Cannot play video</string>
+    <string name="vitamio_videoview_error_button">OK</string>
+    <!-- list dialog -->
+
+
+    <!-- menu about -->
+
+
+    <!-- wps exit dialog -->
+    <string name="open_failed">打开失败</string>
+    <string name="enter_password">输入密码</string>
+    <string name="text_not_found">Text not found</string>
+    <string name="outline_title">目录</string>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_view_bkg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/title_tv_style"
+            android:text="我" />
+
+        <RelativeLayout
+            android:id="@+id/user_userinfo_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/user_item_bg" >
+
+            <TextView
+                style="@style/user_tv_style"
+                android:text="个人资料" />
+
+            <com.ppkj.mindrays.widget.RoundedImageView
+                android:id="@+id/user_head"
+                android:layout_width="55dip"
+                android:layout_height="55dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:background="@drawable/default_user_head" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_suggest_click"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/user_item_bg" >
+
+            <TextView
+                style="@style/user_tv_style"
+                android:text="意见反馈" />
+
+            <TextView style="@style/user_iv_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_upgrade_click"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/user_item_bg" >
+
+            <TextView
+                style="@style/user_tv_style"
+                android:text="版本更新" />
+
+            <TextView style="@style/user_iv_style" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_about_click"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/user_item_bg" >
+
+            <TextView
+                style="@style/user_tv_style"
+                android:text="关于迈瑞思" />
+
+            <TextView style="@style/user_iv_style" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/user_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/user_button_bg"
+            android:text="退出登录"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>

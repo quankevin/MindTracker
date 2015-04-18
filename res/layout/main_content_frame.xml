@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 导航栏 -->
+
+    <LinearLayout
+        android:id="@+id/main_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_navi_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navi_bg"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/navi_item_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:id="@+id/navi_item_video_name"
+                style="@style/main_navi_txt_style"
+                android:text="@string/str_navi_video" />
+
+            <ImageView
+                style="@style/main_navi_img_style"
+                android:layout_above="@id/navi_item_video_name"
+                android:contentDescription="@null"
+                android:src="@drawable/main_navi_icon_video" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navi_item_file"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:id="@+id/navi_item_file_name"
+                style="@style/main_navi_txt_style"
+                android:text="@string/str_navi_file" />
+
+            <ImageView
+                style="@style/main_navi_img_style"
+                android:layout_above="@id/navi_item_file_name"
+                android:contentDescription="@null"
+                android:src="@drawable/main_navi_icon_file" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navi_item_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:id="@+id/navi_item_cloud_name"
+                style="@style/main_navi_txt_style"
+                android:text="@string/str_navi_cloud" />
+
+            <ImageView
+                style="@style/main_navi_img_style"
+                android:layout_above="@id/navi_item_cloud_name"
+                android:contentDescription="@null"
+                android:src="@drawable/main_navi_icon_cloud" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navi_item_me"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:id="@+id/navi_item_me_name"
+                style="@style/main_navi_txt_style"
+                android:text="@string/str_navi_me" />
+
+            <ImageView
+                style="@style/main_navi_img_style"
+                android:layout_above="@id/navi_item_me_name"
+                android:contentDescription="@null"
+                android:src="@drawable/main_navi_icon_me" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 分割线 -->
+
+    <View
+        android:id="@+id/navigate_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/main_navigate"
+        android:background="#DADADA" />
+
+    <!-- 内容 -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigate_top_line"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
